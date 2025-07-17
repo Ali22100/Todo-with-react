@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.todo-wrapper {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 25px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.input-style {
+  background-color: #fdfdfd;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+
+.input-group .btn {
+  border-radius: 0 10px 10px 0;
+  background-color: #ffffff;
+  color: #6a11cb;
+}
+
+.list-group-item {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-top: 10px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: #f1f1f1;
+}
+
+.todo-text {
+  cursor: pointer;
+  flex-grow: 1;
+  word-break: break-word;
+}
+
+.completed .todo-text {
+  text-decoration: line-through;
+  color: gray;
+}
